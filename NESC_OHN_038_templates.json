@@ -1,7 +1,7 @@
 {
   "version": "3",
   "templates": [
-        {
+    {
       "id": 1,
       "type": 2,
       "title": "Swarm monitoring",
@@ -9,9 +9,9 @@
       "note": "Requires Docker version 19.03.0+. <b>Make sure to add the <code>monitoring == true</code> one of your Swarm manager node before deploying this stack.</b>",
       "categories": ["Monitoring"],
       "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/portainer.png",
+      "logo": "https://raw.githubusercontent.com/axel-nokia/portainer-templates/main/portainer.png",
       "repository": {
-        "url": "http://templates",
+        "url": "https://github.com/axel-nokia/portainer-templates.git",
         "stackfile": "ohn_038-swarm_monitoring.yml"
       },
       "env": [
@@ -34,20 +34,20 @@
       "note": "Deploys Jupyter Notebook editor with Python 3.6.5, Tensorflow 1.11.0 and Keras enabled.",
       "categories": ["serverless"],
       "platform": "linux",
-      "logo": "http://10.208.176.165/Jupyter.png",
+      "logo": "https://raw.githubusercontent.com/axel-nokia/portainer-templates/main/Jupyter.png",
       "env": [
-      {
-        "name": "INSTANCE_ID",
-        "label": "Cluster Id",
-        "description": "Cluster Instance id (1, 2, ...)."
-      }
-    ],
+        {
+          "name": "INSTANCE_ID",
+          "label": "Cluster Id",
+          "description": "Cluster Instance id (1, 2, ...)."
+        }
+      ],
       "repository": {
-        "url": "http://templates",
+        "url": "https://github.com/axel-nokia/portainer-templates.git",
         "stackfile": "docker-compose-jupyter-standalone-python3.6.4.yml"
       }
     },
-      {
+    {
       "id": 3,
       "type": 2,
       "title": "SparkCluster 2.4.7 - Jupyter 5.7.8 - Python 2.7.16",
@@ -55,16 +55,16 @@
       "note": "Deploys a Spark cluster running Spark 2.4.7 with Python 2.7.16, Tensorflow 2.1.0 and Keras enabled together with Jupyter 5.7.8 and PixieDust 1.1.19",
       "categories": ["serverless"],
       "platform": "linux",
-      "logo": "http://10.208.176.165/SparkJup.png",
+      "logo": "https://raw.githubusercontent.com/axel-nokia/portainer-templates/main/SparkJup.png",
       "env": [
-      {
-        "name": "INSTANCE_ID",
-        "label": "Cluster Id",
-        "description": "Cluster Instance id (1, 2, ...)."
-      }
-    ],
+        {
+          "name": "INSTANCE_ID",
+          "label": "Cluster Id",
+          "description": "Cluster Instance id (1, 2, ...)."
+        }
+      ],
       "repository": {
-        "url": "http://templates",
+        "url": "https://github.com/axel-nokia/portainer-templates.git",
         "stackfile": "ohn_038-spark2.4-jupyter-python3.8.yml"
       }
     },
@@ -76,16 +76,16 @@
       "note": "Deploys a Spark cluster running Spark 2.4.7 with Python 3.7.10, Tensorflow 2.4.1 and Keras enabled together with Zeppelin 0.10.0 (snapshot) configured with Nokia CSL authentication.",
       "categories": ["serverless"],
       "platform": "linux",
-      "logo": "http://10.208.176.165/Post.png",
+      "logo": "https://raw.githubusercontent.com/axel-nokia/portainer-templates/main/Post.png",
       "env": [
-      {
-        "name": "INSTANCE_ID",
-        "label": "Cluster Id",
-        "description": "Cluster Instance id (1, 2, ...)."
-      }
-     ],
+        {
+          "name": "INSTANCE_ID",
+          "label": "Cluster Id",
+          "description": "Cluster Instance id (1, 2, ...)."
+        }
+      ],
       "repository": {
-        "url": "http://templates",
+        "url": "https://github.com/axel-nokia/portainer-templates.git",
         "stackfile": "ohn_038-post_zepp0.10.0-spark-2.4.7-tf2.4.1.yml"
       }
     },
@@ -97,19 +97,19 @@
       "note": "Deploys a Spark cluster running Spark 3.3.0 with Python 3.9.9, Tensorflow 2.10.0 and Keras enabled together with Zeppelin 0.11.0 (snapshot) configured with Nokia CSL authentication.",
       "categories": ["serverless"],
       "platform": "linux",
-      "logo": "http://10.208.176.165/SparkZepp.png",
+      "logo": "https://raw.githubusercontent.com/axel-nokia/portainer-templates/main/SparkZepp.png",
       "env": [
-      {
-        "name": "INSTANCE_ID",
-        "label": "Cluster Id",
-        "description": "Cluster Instance id (1, 2, ...)."
-      }
-     ],
+        {
+          "name": "INSTANCE_ID",
+          "label": "Cluster Id",
+          "description": "Cluster Instance id (1, 2, ...)."
+        }
+      ],
       "repository": {
-        "url": "http://templates",
+        "url": "https://github.com/axel-nokia/portainer-templates.git",
         "stackfile": "ohn_038-small_zepp0.11.0-spark-3.3.0-tf2.10.0.yml"
       }
-    },  
+    },
     {
       "id": 6,
       "type": 2,
@@ -118,16 +118,16 @@
       "note": "Deploys a Spark cluster running Spark 3.3.0 with Python 3.9.9, Tensorflow 2.10.0 tensorflow-probability 0.18.0 and Keras enabled together with Zeppelin 0.10.0 (snapshot) configured with Nokia CSL authentication.",
       "categories": ["serverless"],
       "platform": "linux",
-      "logo": "http://10.208.176.165/SparkZepp.png",
+      "logo": "https://raw.githubusercontent.com/axel-nokia/portainer-templates/main/SparkZepp.png",
       "env": [
-      {
-        "name": "INSTANCE_ID",
-        "label": "Cluster Id",
-        "description": "Cluster Instance id (1, 2, ...)."
-      }
-     ],
+        {
+          "name": "INSTANCE_ID",
+          "label": "Cluster Id",
+          "description": "Cluster Instance id (1, 2, ...)."
+        }
+      ],
       "repository": {
-        "url": "http://templates",
+        "url": "https://github.com/axel-nokia/portainer-templates.git",
         "stackfile": "ohn_038-zepp0.11.0-spark-3.3.0-tf2.10.0-xpcore3.0.0.yml"
       }
     },
@@ -139,16 +139,16 @@
       "note": "Deploys a Spark cluster running Spark 3.5.1 with Python 3.11.9, Tensorflow 2.16.1 and Keras enabled together with Zeppelin 0.11.0 (snapshot) configured with Nokia CSL authentication.",
       "categories": ["serverless"],
       "platform": "linux",
-      "logo": "http://10.208.176.165/SparkZepp.png",
+      "logo": "https://raw.githubusercontent.com/axel-nokia/portainer-templates/main/SparkZepp.png",
       "env": [
-      {
-        "name": "INSTANCE_ID",
-        "label": "Cluster Id",
-        "description": "Cluster Instance id (1, 2, ...)."
-      }
-     ],
+        {
+          "name": "INSTANCE_ID",
+          "label": "Cluster Id",
+          "description": "Cluster Instance id (1, 2, ...)."
+        }
+      ],
       "repository": {
-        "url": "http://templates",
+        "url": "https://github.com/axel-nokia/portainer-templates.git",
         "stackfile": "ohn_038-small_zepp0.11-spark-3.5.1-tf2.16.1-p3.11.9.yml"
       }
     },
@@ -160,16 +160,16 @@
       "note": "Deploys a Spark cluster running Spark 3.5.1 with Python 3.11.9, Tensorflow 2.16.1 and Keras enabled together with Zeppelin 0.11 (snapshot) configured with Nokia CSL authentication.",
       "categories": ["serverless"],
       "platform": "linux",
-      "logo": "https://github.com/dx-xp-team/portainer-templates/raw/master/XpClusterZep0.8.png",
+      "logo": "https://raw.githubusercontent.com/axel-nokia/portainer-templates/main/XpClusterZep0.8.png",
       "env": [
-      {
-        "name": "INSTANCE_ID",
-        "label": "Cluster Id",
-        "description": "Cluster Instance id (1, 2, ...)."
-      }
-     ],
+        {
+          "name": "INSTANCE_ID",
+          "label": "Cluster Id",
+          "description": "Cluster Instance id (1, 2, ...)."
+        }
+      ],
       "repository": {
-        "url": "http://10.208.176.165",
+        "url": "https://github.com/axel-nokia/portainer-templates.git",
         "stackfile": "ohn_038-spark-3.5.1-cluster-0.11-3.5p3.11.9-tf2.16.1.yml"
       }
     },
@@ -181,18 +181,18 @@
       "note": "Deploys a Spark cluster running Spark 3.5.1 with Python 3.10.12, Tensorflow 2.16.1 and Keras 3.0 enabled together with Zeppelin 0.11 (snapshot) configured with Nokia CSL authentication.",
       "categories": ["serverless"],
       "platform": "linux",
-      "logo": "http://10.208.176.165/Post.png",
+      "logo": "https://raw.githubusercontent.com/axel-nokia/portainer-templates/main/Post.png",
       "env": [
-      {
-        "name": "INSTANCE_ID",
-        "label": "Cluster Id",
-        "description": "Cluster Instance id (1, 2, ...)."
-      }
-     ],
+        {
+          "name": "INSTANCE_ID",
+          "label": "Cluster Id",
+          "description": "Cluster Instance id (1, 2, ...)."
+        }
+      ],
       "repository": {
-        "url": "http://templates",
+        "url": "https://github.com/axel-nokia/portainer-templates.git",
         "stackfile": "ohn_038-post_pytorch_2.2.1-tf_2.16.1.yml"
       }
-    }  
+    }
   ]
-  }
+}
