@@ -1,0 +1,22 @@
+version: "3"
+services:
+  jupyter:
+    image: dxxpteam/xpjupyter:standalone
+    hostname: jupyter
+    command: jupyter notebook --debug --no-browser --ip=0.0.0.0 --notebook-dir=/mnt/jupyterNotebookRepo --allow-root
+    ports :
+      - "${INSTANCE_ID}888:8888"
+      - "${INSTANCE_ID}050:5050"
+    environment:
+      http_proxy: http://135.245.48.34:8000
+      https_proxy: https://135.245.48.34:8000
+      TZ: Europe/Brussels
+    volumes:
+      - /mnt/data:/mnt/data
+      - /mnt/jupyterNotebookRepo:/mnt/jupyterNotebookRepo
+    deploy:
+      resources:
+        limits:
+          memory: 20G
+        reservations:
+          memory: 20G

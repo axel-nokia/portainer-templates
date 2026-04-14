@@ -1,0 +1,165 @@
+{
+"version": "2",
+"templates": [
+  {
+    "type": 2,
+    "title": "Jupyter Notebook Editor",
+    "description": "Standalone Jupyter 5.5.0 Notebook editor for Python 3.6",
+    "note": "Deploys Jupyter Notebook editor with Python 3.6.5, Tensorflow 1.11.0 and Keras enabled.",
+    "categories": ["serverless"],
+    "platform": "linux",
+    "logo": "https://gitlabe1.ext.net.nokia.com/dammeax/portainer-templates/-/raw/main/Jupyter.png",
+    "env": [
+    {
+      "name": "INSTANCE_ID",
+      "label": "Cluster Id",
+      "description": "Cluster Instance id (1, 2, ...)."
+    }
+  ],
+    "repository": {
+      "url": "https://gitlabe1.ext.net.nokia.com/dammeax/portainer-templates",
+      "stackfile": "docker-compose-jupyter-standalone-python3.6.4.yml"
+    }
+  },
+    {
+    "type": 2,
+    "title": "SparkCluster 2.4.7 - Jupyter 5.7.8 - Python 2.7.16",
+    "description": "Spark 2.4.7 cluster with Jupyter 5.7.8 Notebook editor for Python 2.7",
+    "note": "Deploys a Spark cluster running Spark 2.4.7 with Python 2.7.16, Tensorflow 2.1.0 and Keras enabled together with Jupyter 5.7.8 and PixieDust 1.1.19",
+    "categories": ["serverless"],
+    "platform": "linux",
+    "logo": "https://gitlabe1.ext.net.nokia.com/dammeax/portainer-templates/-/raw/main/SparkJup.png",
+    "env": [
+    {
+      "name": "INSTANCE_ID",
+      "label": "Cluster Id",
+      "description": "Cluster Instance id (1, 2, ...)."
+    }
+  ],
+    "repository": {
+      "url": "https://gitlabe1.ext.net.nokia.com/dammeax/portainer-templates",
+      "stackfile": "docker-compose-spark2.4-jupyter-python3.8.yml"
+    }
+  },
+  {
+    "type": 2,
+    "title": "SparkCluster 2.4.7 - Zeppelin 0.10.0_snapshot - Python 3.7.10 - TF 2.4.1 - custom",
+    "description": "40Gb worker stack with Spark 2.4.7 cluster with Zeppelin 0.10.0 (snapshot) with Python 3.7.10 and Tensorflow 2.4.1",
+    "note": "Deploys a Spark cluster running Spark 2.4.7 with Python 3.7.10, Tensorflow 2.4.1 and Keras enabled together with Zeppelin 0.10.0 (snapshot) configured with Nokia CSL authentication.",
+    "categories": ["serverless"],
+    "platform": "linux",
+    "logo": "https://gitlabe1.ext.net.nokia.com/dammeax/portainer-templates/-/raw/main/Post.png",
+    "env": [
+    {
+      "name": "INSTANCE_ID",
+      "label": "Cluster Id",
+      "description": "Cluster Instance id (1, 2, ...)."
+    }
+   ],
+    "repository": {
+      "url": "https://gitlabe1.ext.net.nokia.com/dammeax/portainer-templates",
+      "stackfile": "post_zepp0.10.0-spark-2.4.7-tf2.4.1.yml"
+    }
+  },
+  {
+    "type": 2,
+    "title": "Small SparkCluster 2.4.7 - Zeppelin 0.10.0_snapshot - Python 3.7.10 - TF 2.4.1 - xpcore 3.0.0",
+    "description": "40Gb per worker stack with Spark 2.4.7 cluster with Zeppelin 0.10.0 (snapshot) with Python 3.7.10 and Tensorflow 2.4.1",
+    "note": "Deploys a Spark cluster running Spark 2.4.7 with Python 3.7.10, Tensorflow 2.4.1 and Keras enabled together with Zeppelin 0.10.0 (snapshot) configured with Nokia CSL authentication.",
+    "categories": ["serverless"],
+    "platform": "linux",
+    "logo": "https://gitlabe1.ext.net.nokia.com/dammeax/portainer-templates/-/raw/main/SparkZepp.png",
+    "env": [
+    {
+      "name": "INSTANCE_ID",
+      "label": "Cluster Id",
+      "description": "Cluster Instance id (1, 2, ...)."
+    }
+   ],
+    "repository": {
+      "url": "https://gitlabe1.ext.net.nokia.com/dammeax/portainer-templates",
+      "stackfile": "small_zepp0.10.0-spark-2.4.7-tf2.4.1-xpcore2.2.0.yml"
+    }
+  },  
+  {
+    "type": 2,
+    "title": "SparkCluster 2.4.7 - Zeppelin 0.10.0_snapshot - Python 3.7.13 - TF 2.5.0 - xpcore 3.0.0",
+    "description": "155Gb per worker Stack with Spark 2.4.7 cluster with Zeppelin 0.10.0 (snapshot) with Python 3.7.13 and Tensorflow 2.5.0",
+    "note": "Deploys a Spark cluster running Spark 2.4.7 with Python 3.7.13, Tensorflow 2.5.0 tensorflow-probability 0.12.1 and Keras enabled together with Zeppelin 0.10.0 (snapshot) configured with Nokia CSL authentication.",
+    "categories": ["serverless"],
+    "platform": "linux",
+    "logo": "https://gitlabe1.ext.net.nokia.com/dammeax/portainer-templates/-/raw/main/SparkZepp.png",
+    "env": [
+    {
+      "name": "INSTANCE_ID",
+      "label": "Cluster Id",
+      "description": "Cluster Instance id (1, 2, ...)."
+    }
+   ],
+    "repository": {
+      "url": "https://gitlabe1.ext.net.nokia.com/dammeax/portainer-templates",
+      "stackfile": "zepp0.10.0-spark-2.4.7-tf2.4.1-xpcore2.2.0.yml"
+    }
+  },
+  {
+    "type": 2,
+    "title": "SparkCluster 3.3.0 - Zeppelin 0.10.0_snapshot - Python 3.9.9 - TF 2.10.0 - xpcore 3.0.0",
+    "description": "155Gb per worker Stack with Spark 3.3.0 cluster with Zeppelin 0.10.0 (snapshot) with Python 3.9.9 and Tensorflow 2.10.0",
+    "note": "Deploys a Spark cluster running Spark 3.3.0 with Python 3.9.9, Tensorflow 2.10.0 tensorflow-probability 0.18.0 and Keras enabled together with Zeppelin 0.10.0 (snapshot) configured with Nokia CSL authentication.",
+    "categories": ["serverless"],
+    "platform": "linux",
+    "logo": "https://gitlabe1.ext.net.nokia.com/dammeax/portainer-templates/-/raw/main/SparkZepp.png",
+    "env": [
+    {
+      "name": "INSTANCE_ID",
+      "label": "Cluster Id",
+      "description": "Cluster Instance id (1, 2, ...)."
+    }
+   ],
+    "repository": {
+      "url": "https://gitlabe1.ext.net.nokia.com/dammeax/portainer-templates",
+      "stackfile": "zepp0.10.0-spark-3.3.0-tf2.10.0-xpcore3.0.0.yml"
+    }
+  },
+  {
+    "type": 2,
+    "title": "Small SparkCluster 3.3.0 - Zeppelin 0.10.0_snapshot - Python 3.9.9 - TF 2.10.0 - xpcore 3.0.0",
+    "description": "40Gb per worker stack with Spark 3.3.0 cluster with Zeppelin 0.10.0 (snapshot) with Python 3.9.9 and Tensorflow 2.10.0",
+    "note": "Deploys a Spark cluster running Spark 3.3.0 with Python 3.9.9, Tensorflow 2.10.0 and Keras enabled together with Zeppelin 0.10.0 (snapshot) configured with Nokia CSL authentication.",
+    "categories": ["serverless"],
+    "platform": "linux",
+    "logo": "https://gitlabe1.ext.net.nokia.com/dammeax/portainer-templates/-/raw/main/SparkZepp.png",
+    "env": [
+    {
+      "name": "INSTANCE_ID",
+      "label": "Cluster Id",
+      "description": "Cluster Instance id (1, 2, ...)."
+    }
+   ],
+    "repository": {
+      "url": "https://gitlabe1.ext.net.nokia.com/dammeax/portainer-templates",
+      "stackfile": "small_zepp0.10.0-spark-3.3.0-tf2.10.0-xpcore3.0.0.yml"
+    }
+  },
+  {
+    "type": 2,
+    "title": "SparkCluster 3.5.0 - Zeppelin 0.11.0 - Python 3.11.6 - TF 2.15.0 - xpcore 4.6.0",
+    "description": "155Gb per worker Spark 3.5 cluster with Zeppelin 0.11.0 (snapshot) with Python 3.11.6 and Tensorflow 2.15.0",
+    "note": "Deploys a Spark cluster running Spark 3.5.0 with Python 3.11.6, Tensorflow 2.15.0 and Keras enabled together with Zeppelin 0.11 (snapshot) configured with Nokia CSL authentication.",
+    "categories": ["serverless"],
+    "platform": "linux",
+    "logo": "https://github.com/dx-xp-team/portainer-templates/raw/master/XpClusterZep0.8.png",
+    "env": [
+    {
+      "name": "INSTANCE_ID",
+      "label": "Cluster Id",
+      "description": "Cluster Instance id (1, 2, ...)."
+    }
+   ],
+    "repository": {
+      "url": "https://gitlabe1.ext.net.nokia.com/dammeax/portainer-templates",
+      "stackfile": "docker-compose-spark-3.5.0-cluster-0.8-2.3p3.9.9-tf2.10.0.yml"
+    }
+  }  
+]
+}
